@@ -24,7 +24,7 @@ const release = async () => {
   await setUpJob();
   await installSpecifyingVersionSemantic();
   await preInstall(core.getInput(inputs.extra_plugins));
-  await preInstall(core.getInput(inputs.extends));
+  // await preInstall(core.getInput(inputs.extends));
 
   const semanticRelease = require('semantic-release');
   const result = await semanticRelease({
